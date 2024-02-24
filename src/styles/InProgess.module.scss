@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.patient {
+  color: lightslategray;
+}
+
+.cynthia {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+@keyframes rainbow-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    color: #ff0000;
+  }
+  25% {
+    color: #ffa500;
+  }
+  37.5% {
+    color: #ffff00;
+  }
+  50% {
+    color: #7fff00;
+  }
+  62.5% {
+    color: #00ffff;
+  }
+  75% {
+    color: #0000ff;
+  }
+  87.5% {
+    color: #9932cc;
+  }
+  100% {
+    color: #ff1493;
+    transform: rotate(360deg);
+  }
+}
+
+.serialBlagueur {
+  position: absolute;
+  top: -80px;
+  animation: rainbow-rotate 4s linear infinite;
+}
